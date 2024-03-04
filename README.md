@@ -57,3 +57,20 @@ To run this project, you will need to add the following environment variables to
 ## Support
 
 If you find this project helpful or would like to support my work, you can ⭐ this Repo
+
+on:
+  push:
+    branches:
+    - staging
+    
+jobs:
+  test:
+    name: Test on node ${{ matrix.node_version }} and ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    steps:
+    - uses: actions/checkout@v1
+    - name: npm install, build and test
+      run: |
+        npm install
+        npm run build
+      
