@@ -1,0 +1,16 @@
+on:
+  push:
+    branches:
+    - staging
+    
+jobs:
+  test:
+    name: Test on node ${{ matrix.node_version }} and ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    steps:
+    - uses: actions/checkout@v1
+    - name: npm install, build and test
+      run: |
+        npm install
+        npm run build
+      
