@@ -90,7 +90,7 @@ export const projectsData = [
     ],
     image: tastyMockup,
     deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
-    githuburl: "https://github.com/AlpayC/Frontend_Abschlussprojekt_Tasty",
+    githuburl: "https://github.com/s-ammar-ahmed/",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -122,8 +122,7 @@ export const projectsData = [
     ],
     image: silentmoonMockup,
     deploymenturl: "https://silentmoon-grpw.onrender.com/",
-    githuburl:
-      "https://github.com/AlpayC/Fullstack_Abschlussprojekt_SilentMoon",
+    githuburl: "https://github.com/s-ammar-ahmed/",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -155,7 +154,7 @@ export const projectsData = [
     ],
     image: instorMockup,
     deploymenturl: "https://mern-haushaltsbuch.onrender.com/",
-    githuburl: "https://github.com/AlpayC/Furniture_MERN",
+    githuburl: "https://github.com/s-ammar-ahmed/",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -310,18 +309,18 @@ export const FooterLinks = [
 ] as const;
 
 export const sideBarRightMail = {
-  link: "mailto:myemail@com",
-  text: "myemail@com",
+  link: "mailto:ammar.xorsat@gmail.com",
+  text: "ammar.xorsat@gmail.com",
 } as const;
 
 export const sideBarLeftSocials = [
   {
-    link: "https://www.linkedin.com/in/alpay/",
+    link: "https://www.linkedin.com/in/ammar-ahmed-14289911b/",
     icon: FiLinkedin,
     altimgname: "linkedin",
   },
   {
-    link: "https://github.com/AlpayC",
+    link: "https://github.com/s-ammar-ahmed",
     icon: FiGithub,
     altimgname: "github",
   },
