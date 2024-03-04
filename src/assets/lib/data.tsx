@@ -39,8 +39,8 @@ import Privacy from "../../components/Privacy";
 
 export const headerIntroData = {
   title: {
-    de: "Hi, ich bin Alpay",
-    en: "Hi, I'm Alpay",
+    de: "Hi, ich bin Ammar",
+    en: "Hi, I'm Ammar",
   },
   subtitle: "Fullstack Developer ",
   description: {
@@ -469,8 +469,8 @@ export const contactData = {
   },
   privacyOptIn: {
     checkbox: {
-      de: "Ich stimme zu, dass Alpay meine personenbezogenen Daten (Name und E-Mail-Adresse) verwenden darf, um mit mir Kontakt aufzunehmen.",
-      en: "I agree that Alpay may use my personal data (name and e-mail address) to contact me.",
+      de: "Ich stimme zu, dass Ammar meine personenbezogenen Daten (Name und E-Mail-Adresse) verwenden darf, um mit mir Kontakt aufzunehmen.",
+      en: "I agree that Ammar may use my personal data (name and e-mail address) to contact me.",
     },
     description: {
       de: "Durch Übermittlung dieser Anfrage bestätigen Sie, dass Sie die Datenschutzerklärung gelesen haben",
