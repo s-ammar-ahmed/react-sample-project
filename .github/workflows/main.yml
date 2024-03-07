@@ -21,8 +21,17 @@ jobs:
           path: |
             dist
             !dist/**/*.md
-      - name: Archive code coverage results
-        uses: actions/upload-artifact@v4
-        with:
-          name: code-coverage-report
-          path: output/test/code-coverage.html
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/upload-artifact@v4
+      - name: Upload ZIP to S3
+        uses: NotCoffee418/s3-zip-upload@v1.4
+        env:
+          AWS_SECRET_ID: ${{ secrets.AWS_SECRET_ID }}
+          AWS_SECRET_KEY: ${{ secrets.AWS_SECRET_KEY }}
+          BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
+          AWS_REGION: eu-central-1
+          SOURCE_MODE: ZIP
+          SOURCE_PATH: ./debug-override
+          DEST_FILE: debug-action.zip
